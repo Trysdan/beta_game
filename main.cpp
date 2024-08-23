@@ -23,7 +23,7 @@ int main() {
     sf::Sprite background(backgroundTexture);
 
     // Crear el personaje
-    Player player((Settings::GRAPHICS_PATH / "warrior.png").string(), 0.1f, 100.0f, sf::Vector2f(400, 300));
+    Player player((Settings::GRAPHICS_PATH / "warrior.png").string(), 0.1f, 100.0f, sf::Vector2f((Settings::WINDOW_WIDTH / 2 + Settings::PLAYER_WIDTH / 2), (Settings::WINDOW_HEIGHT / 2 + Settings::PLAYER_HEIGHT / 2)));
 
     sf::Clock clock;
 
